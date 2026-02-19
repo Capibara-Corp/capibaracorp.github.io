@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capibara Corp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #FDF8E8;
+      color: #2D3436;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      background-color: #4A6FA5;
+      color: #FDF8E8;
+      padding: 3.5rem 1rem 3rem;
+      text-align: center;
+    }
+    .header h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 3.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .header .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      flex: 1;
+      width: 100%;
+    }
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1.6rem;
+      color: #4A6FA5;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+    .app-card {
+      background: #FFFEF5;
+      border: 1px solid #E8D5B7;
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .app-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(74, 111, 165, 0.15);
+    }
+    .app-icon {
+      font-size: 3rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .app-info h2 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 1.6rem;
+      color: #4A6FA5;
+      margin-bottom: 0.25rem;
+    }
+    .app-info p {
+      font-size: 0.95rem;
+      color: #636e72;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .app-info .app-links {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .app-info .app-links a {
+      color: #4A6FA5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .app-info .app-links a:hover {
+      text-decoration: underline;
+    }
+    .app-info .app-links span {
+      color: #b2bec3;
+      margin: 0 0.4rem;
+    }
+    .contact-box {
+      background: #FFFEF5;
+      border: 1px solid #E8D5B7;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #636e72;
+      line-height: 1.6;
+    }
+    .contact-box a {
+      color: #4A6FA5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      background-color: #4A6FA5;
+      color: #FDF8E8;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      font-size: 0.85rem;
+      opacity: 0.95;
+    }
+    @media (max-width: 520px) {
+      .header h1 { font-size: 2.4rem; }
+      .header { padding: 2.5rem 1rem 2rem; }
+      .app-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+      .container {
+        padding: 1.5rem 1rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Capibara Corp</h1>
+    <div class="subtitle">Apps &amp; Legal Documents</div>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Our Apps</h2>
+
+    <a href="papermagic/" class="app-card">
+      <div class="app-icon">&#9986;</div>
+      <div class="app-info">
+        <h2>PaperMagic</h2>
+        <p>Digital paper dolls &mdash; dress up, print &amp; play!</p>
+        <div class="app-links">
+          <a href="papermagic/privacy-policy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="papermagic/terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </a>
+
+    <div class="contact-box">
+      For general inquiries: <a href="mailto:support@capibaracorp.com">support@capibaracorp.com</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 Capibara Corp
+  </div>
+</body>
+</html>
